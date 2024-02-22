@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression</title>
+</head>
+<body>
+    <h1>Image Compression</h1>
+    <form action="/compress/" method="post" enctype="multipart/form-data">
+        <label for="file">Select an image file:</label><br>
+        <input type="file" id="file" name="input_file"><br>
+        <label for="clusters">Number of Clusters:</label><br>
+        <input type="number" id="clusters" name="n_clusters" value="8" min="2" max="256"><br><br>
+        <input type="submit" value="Compress">
+    </form>
+    {% if result %}
+    <h2>Result:</h2>
+    <img src="/static/{{ result }}" alt="Compressed Image">
+    {% endif %}
+</body>
+</html>
