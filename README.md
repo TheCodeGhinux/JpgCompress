@@ -1,4 +1,4 @@
-Image Compression Algorithm
+# Image Compression Algorithm
 This repository contains a Python implementation of a simple image compression algorithm using the K-means clustering technique. Additionally, it includes a FastAPI frontend that provides a user interface for compressing images through a web browser.
 
 Features
